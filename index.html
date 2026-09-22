@@ -1,0 +1,1142 @@
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>عيادة الدكتور كريم بن عمر لطب الأسنان | الجزائر</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --primary:#0ea5e9;
+    --primary-dark:#0369a1;
+    --primary-light:#e0f2fe;
+    --accent:#06b6d4;
+    --ink:#0f172a;
+    --muted:#64748b;
+    --soft:#f8fafc;
+  }
+  *{font-family:'Cairo','Tajawal',sans-serif;}
+  html{scroll-behavior:smooth;}
+  body{background:#ffffff;color:var(--ink);overflow-x:hidden;}
+  .font-tajawal{font-family:'Tajawal',sans-serif;}
+  .hero-gradient{
+    background:linear-gradient(135deg,#e0f2fe 0%,#f0f9ff 40%,#ffffff 100%);
+  }
+  .btn-primary{
+    background:linear-gradient(135deg,#0ea5e9,#0369a1);
+    box-shadow:0 10px 25px -8px rgba(14,165,233,0.5);
+    transition:all .3s ease;
+  }
+  .btn-primary:hover{transform:translateY(-3px);box-shadow:0 15px 30px -8px rgba(14,165,233,0.6);}
+  .btn-outline{
+    border:2px solid #0ea5e9;color:#0369a1;transition:all .3s ease;
+  }
+  .btn-outline:hover{background:#0ea5e9;color:#fff;transform:translateY(-3px);}
+  .card-hover{transition:all .4s cubic-bezier(.2,.8,.2,1);}
+  .card-hover:hover{transform:translateY(-8px);box-shadow:0 25px 50px -12px rgba(14,165,233,0.25);}
+  .fade-up{opacity:0;transform:translateY(40px);transition:all .8s cubic-bezier(.2,.8,.2,1);}
+  .fade-up.visible{opacity:1;transform:translateY(0);}
+  .nav-link{position:relative;}
+  .nav-link::after{content:'';position:absolute;bottom:-4px;right:0;width:0;height:2px;background:#0ea5e9;transition:width .3s;}
+  .nav-link:hover::after{width:100%;}
+  .service-icon{transition:all .4s ease;}
+  .service-card:hover .service-icon{transform:scale(1.15) rotate(-8deg);}
+  .step-circle{transition:all .4s ease;}
+  .step.active .step-circle{background:linear-gradient(135deg,#0ea5e9,#0369a1);color:#fff;box-shadow:0 10px 25px -5px rgba(14,165,233,0.5);}
+  .step.done .step-circle{background:#10b981;color:#fff;}
+  .time-slot{transition:all .25s ease;}
+  .time-slot:hover:not(.disabled){border-color:#0ea5e9;background:#e0f2fe;color:#0369a1;}
+  .time-slot.selected{background:linear-gradient(135deg,#0ea5e9,#0369a1);color:#fff;border-color:transparent;}
+  .time-slot.disabled{opacity:.35;cursor:not-allowed;background:#f1f5f9;}
+  .glass{backdrop-filter:blur(12px);background:rgba(255,255,255,0.85);}
+  .blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.5;z-index:0;}
+  .scrollbar-hide::-webkit-scrollbar{display:none;}
+  .scrollbar-hide{-ms-overflow-style:none;scrollbar-width:none;}
+  .modal-backdrop{backdrop-filter:blur(6px);background:rgba(15,23,42,0.6);}
+  .tab-active{background:linear-gradient(135deg,#0ea5e9,#0369a1);color:#fff;}
+  input,select,textarea{font-family:'Tajawal',sans-serif;}
+  .animate-float{animation:float 6s ease-in-out infinite;}
+  @keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-18px);}}
+  .animate-pulse-ring{animation:pulsering 2s ease-out infinite;}
+  @keyframes pulsering{0%{box-shadow:0 0 0 0 rgba(14,165,233,.5);}70%{box-shadow:0 0 0 18px rgba(14,165,233,0);}100%{box-shadow:0 0 0 0 rgba(14,165,233,0);}}
+  .badge-pending{background:#fef3c7;color:#92400e;}
+  .badge-accepted{background:#d1fae5;color:#065f46;}
+  .badge-rejected{background:#fee2e2;color:#991b1b;}
+  .toast{animation:toastIn .4s ease forwards;}
+  @keyframes toastIn{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+  .marquee{display:flex;gap:3rem;animation:marquee 30s linear infinite;}
+  @keyframes marquee{from{transform:translateX(0);}to{transform:translateX(50%);}}
+</style>
+</head>
+<body>
+
+<!-- ===== Top Bar ===== -->
+<div class="bg-gradient-to-l from-sky-900 to-cyan-800 text-white text-sm py-2 px-4">
+  <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+    <div class="flex items-center gap-4">
+      <span class="flex items-center gap-1.5"><i class="fas fa-phone-alt text-cyan-300"></i> 0555 12 34 56</span>
+      <span class="hidden sm:flex items-center gap-1.5"><i class="fas fa-map-marker-alt text-cyan-300"></i> حي السلام، شارع الاستقلال، الجزائر العاصمة</span>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="#" class="hover:text-cyan-300 transition"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="hover:text-cyan-300 transition"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="hover:text-cyan-300 transition"><i class="fab fa-tiktok"></i></a>
+      <span class="hidden md:inline text-cyan-200">السبت - الخميس: 9:00 - 18:00</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Navbar ===== -->
+<nav id="navbar" class="glass sticky top-0 z-40 border-b border-sky-100 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+    <a href="#home" class="flex items-center gap-3">
+      <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-sky-400 to-sky-700 flex items-center justify-center shadow-lg shadow-sky-200">
+        <i class="fas fa-tooth text-white text-xl"></i>
+      </div>
+      <div class="leading-tight">
+        <h1 class="text-lg sm:text-xl font-extrabold text-sky-900">عيادة الابتسامة</h1>
+        <p class="text-xs text-slate-500 font-tajawal">لطب وجراحة الأسنان</p>
+      </div>
+    </a>
+    <div class="hidden lg:flex items-center gap-8 font-medium text-slate-700">
+      <a href="#home" class="nav-link">الرئيسية</a>
+      <a href="#services" class="nav-link">الخدمات</a>
+      <a href="#about" class="nav-link">عن الطبيب</a>
+      <a href="#why" class="nav-link">لماذا نحن</a>
+      <a href="#reviews" class="nav-link">آراء المرضى</a>
+      <a href="#faq" class="nav-link">الأسئلة الشائعة</a>
+      <a href="#contact" class="nav-link">اتصل بنا</a>
+    </div>
+    <div class="flex items-center gap-2">
+      <button onclick="openDashboard()" class="hidden sm:flex items-center gap-2 text-slate-600 hover:text-sky-700 px-3 py-2 rounded-xl hover:bg-sky-50 transition text-sm">
+        <i class="fas fa-user-md"></i><span class="hidden md:inline">لوحة الطبيب</span>
+      </button>
+      <a href="#booking" class="btn-primary text-white px-4 sm:px-5 py-2.5 rounded-xl font-bold text-sm">
+        <i class="fas fa-calendar-check ml-1"></i> احجز موعد
+      </a>
+      <button onclick="toggleMenu()" class="lg:hidden text-2xl text-sky-800 p-2"><i class="fas fa-bars"></i></button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-sky-100 px-6 py-4 space-y-2 font-medium text-slate-700">
+    <a href="#home" onclick="toggleMenu()" class="block py-2 hover:text-sky-700">الرئيسية</a>
+    <a href="#services" onclick="toggleMenu()" class="block py-2 hover:text-sky-700">الخدمات</a>
+    <a href="#about" onclick="toggleMenu()" class="block py-2 hover:text-sky-700">عن الطبيب</a>
+    <a href="#why" onclick="toggleMenu()" class="block py-2 hover:text-sky-700">لماذا نحن</a>
+    <a href="#reviews" onclick="toggleMenu()" class="block py-2 hover:text-sky-700">آراء المرضى</a>
+    <a href="#faq" onclick="toggleMenu()" class="block py-2 hover:text-sky-700">الأسئلة الشائعة</a>
+    <a href="#contact" onclick="toggleMenu()" class="block py-2 hover:text-sky-700">اتصل بنا</a>
+    <button onclick="openDashboard();toggleMenu()" class="w-full text-right py-2 text-sky-700 font-bold"><i class="fas fa-user-md ml-2"></i>لوحة تحكم الطبيب</button>
+  </div>
+</nav>
+
+<!-- ===== Hero ===== -->
+<section id="home" class="hero-gradient relative overflow-hidden">
+  <div class="blob bg-sky-300 w-72 h-72 -top-10 -right-10"></div>
+  <div class="blob bg-cyan-200 w-96 h-96 bottom-0 -left-20"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 lg:py-20 relative z-10 grid lg:grid-cols-2 gap-10 items-center">
+    <div class="fade-up">
+      <span class="inline-flex items-center gap-2 bg-sky-100 text-sky-700 px-4 py-2 rounded-full text-sm font-bold mb-5">
+        <span class="w-2 h-2 rounded-full bg-sky-500 animate-pulse"></span> عيادة معتمدة ب الجزائر العاصمة
+      </span>
+      <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-slate-900 mb-5">
+        ابتسامتك تبدأ <span class="text-transparent bg-clip-text bg-gradient-to-l from-sky-500 to-cyan-600">من هنا</span>
+      </h2>
+      <p class="text-lg text-slate-600 font-tajawal mb-8 leading-relaxed max-w-xl">
+        نقدم لكم أفضل خدمات طب الأسنان في الجزائر باستخدام أحدث التقنيات وأجهزة عالمية، مع فريق طبي متخصص يهتم بأدق التفاصيل لراحتكم وصحتكم.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#booking" class="btn-primary text-white px-7 py-4 rounded-2xl font-bold text-lg">
+          <i class="fas fa-calendar-check ml-2"></i> احجز موعدك الآن
+        </a>
+        <a href="tel:0555123456" class="btn-outline px-7 py-4 rounded-2xl font-bold text-lg bg-white">
+          <i class="fas fa-phone-volume ml-2"></i> اتصل بنا
+        </a>
+      </div>
+      <div class="grid grid-cols-3 gap-4 mt-12 max-w-md">
+        <div class="text-center">
+          <p class="text-3xl font-extrabold text-sky-700">15+</p>
+          <p class="text-sm text-slate-500 font-tajawal">سنة خبرة</p>
+        </div>
+        <div class="text-center border-r border-l border-sky-100">
+          <p class="text-3xl font-extrabold text-sky-700">8000+</p>
+          <p class="text-sm text-slate-500 font-tajawal">مريض سعيد</p>
+        </div>
+        <div class="text-center">
+          <p class="text-3xl font-extrabold text-sky-700">7</p>
+          <p class="text-sm text-slate-500 font-tajawal">تخصصات</p>
+        </div>
+      </div>
+    </div>
+    <div class="relative fade-up">
+      <div class="relative rounded-[2.5rem] overflow-hidden shadow-2xl shadow-sky-200 animate-float">
+        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=900&q=80" alt="عيادة الأسنان" class="w-full h-[420px] object-cover" onerror="this.src='https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=900'">
+        <div class="absolute inset-0 bg-gradient-to-t from-sky-900/30 to-transparent"></div>
+      </div>
+      <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3 max-w-[220px]">
+        <div class="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center text-emerald-600 text-xl"><i class="fas fa-shield-heart"></i></div>
+        <div>
+          <p class="font-bold text-slate-800 text-sm">تعقيم كامل</p>
+          <p class="text-xs text-slate-500 font-tajawal">أعلى معايير النظافة والسلامة</p>
+        </div>
+      </div>
+      <div class="absolute -top-4 -left-4 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3 animate-pulse-ring">
+        <div class="w-12 h-12 rounded-xl bg-sky-100 flex items-center justify-center text-sky-600 text-xl"><i class="fas fa-award"></i></div>
+        <div>
+          <p class="font-bold text-slate-800 text-sm">جودة معتمدة</p>
+          <p class="text-xs text-slate-500 font-tajawal">شهادات دولية</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Marquee partners -->
+  <div class="bg-white/60 backdrop-blur border-y border-sky-100 py-4 overflow-hidden">
+    <div class="marquee whitespace-nowrap text-slate-400 font-bold text-lg">
+      <span class="flex items-center gap-12">
+        <span><i class="fas fa-tooth ml-2 text-sky-400"></i> زراعة الأسنان</span>
+        <span><i class="fas fa-syringe ml-2 text-sky-400"></i> علاج الجذور</span>
+        <span><i class="fas fa-teeth ml-2 text-sky-400"></i> تبييض احترافي</span>
+        <span><i class="fas fa-teeth-open ml-2 text-sky-400"></i> تقويم حديث</span>
+        <span><i class="fas fa-heart ml-2 text-sky-400"></i> رعاية لطيفة</span>
+      </span>
+      <span class="flex items-center gap-12">
+        <span><i class="fas fa-tooth ml-2 text-sky-400"></i> زراعة الأسنان</span>
+        <span><i class="fas fa-syringe ml-2 text-sky-400"></i> علاج الجذور</span>
+        <span><i class="fas fa-teeth ml-2 text-sky-400"></i> تبييض احترافي</span>
+        <span><i class="fas fa-teeth-open ml-2 text-sky-400"></i> تقويم حديث</span>
+        <span><i class="fas fa-heart ml-2 text-sky-400"></i> رعاية لطيفة</span>
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Services ===== -->
+<section id="services" class="py-20 bg-white relative">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-14 fade-up">
+      <span class="text-sky-600 font-bold text-sm tracking-wider">خدماتنا الطبية</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">رعاية شاملة لأسنانك</h2>
+      <p class="text-slate-500 font-tajawal mt-3 max-w-2xl mx-auto">نوفر مجموعة متكاملة من خدمات طب الأسنان بأحدث التقنيات وأمهر الأطباء.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="servicesGrid"></div>
+  </div>
+</section>
+
+<!-- ===== About Doctor ===== -->
+<section id="about" class="py-20 bg-gradient-to-b from-sky-50 to-white relative overflow-hidden">
+  <div class="blob bg-cyan-200 w-80 h-80 top-10 -right-20"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 grid lg:grid-cols-5 gap-10 items-center">
+    <div class="lg:col-span-2 fade-up">
+      <div class="relative max-w-sm mx-auto">
+        <div class="rounded-[2rem] overflow-hidden shadow-2xl shadow-sky-200 border-4 border-white">
+          <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=700&q=80" alt="الطبيب" class="w-full h-[460px] object-cover" onerror="this.src='https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=700'">
+        </div>
+        <div class="absolute -bottom-5 right-5 left-5 bg-gradient-to-l from-sky-600 to-cyan-600 text-white rounded-2xl p-4 text-center shadow-lg">
+          <p class="font-bold">د. كريم بن عمر</p>
+          <p class="text-sm text-sky-100 font-tajawal">استشاري طب وجراحة الفم والأسنان</p>
+        </div>
+      </div>
+    </div>
+    <div class="lg:col-span-3 fade-up">
+      <span class="text-sky-600 font-bold text-sm tracking-wider">عن الطبيب</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 mb-5">خبرة طبية تثق بها</h2>
+      <p class="text-slate-600 font-tajawal leading-relaxed mb-6">
+        الدكتور كريم بن عمر حاصل على دكتوراه في طب وجراحة الفم والأسنان من جامعة الجزائر، وزمالة في التركيبات المتقدمة من فرنسا. يمتلك خبرة تزيد عن 15 عاماً في علاج الحالات المعقدة، ويهتم بأحدث تقنيات التشخيص الرقمي والزراعة الموجهة. عضو في الجمعية الجزائرية لأطباء الأسنان والجمعية الدولية لزراعة الأسنان.
+      </p>
+      <div class="grid sm:grid-cols-2 gap-4 mb-6">
+        <div class="flex items-center gap-3 bg-white rounded-xl p-4 shadow-sm">
+          <div class="w-10 h-10 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center"><i class="fas fa-graduation-cap"></i></div>
+          <div><p class="font-bold text-slate-800 text-sm">دكتوراه في طب الأسنان</p><p class="text-xs text-slate-500 font-tajawal">جامعة الجزائر</p></div>
+        </div>
+        <div class="flex items-center gap-3 bg-white rounded-xl p-4 shadow-sm">
+          <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center"><i class="fas fa-stethoscope"></i></div>
+          <div><p class="font-bold text-slate-800 text-sm">15+ سنة خبرة</p><p class="text-xs text-slate-500 font-tajawal">في التخصصات الدقيقة</p></div>
+        </div>
+        <div class="flex items-center gap-3 bg-white rounded-xl p-4 shadow-sm">
+          <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center"><i class="fas fa-award"></i></div>
+          <div><p class="font-bold text-slate-800 text-sm">زمالة دولية</p><p class="text-xs text-slate-500 font-tajawal">في التركيبات المتقدمة</p></div>
+        </div>
+        <div class="flex items-center gap-3 bg-white rounded-xl p-4 shadow-sm">
+          <div class="w-10 h-10 rounded-lg bg-rose-100 text-rose-700 flex items-center justify-center"><i class="fas fa-hand-holding-heart"></i></div>
+          <div><p class="font-bold text-slate-800 text-sm">رعاية إنسانية</p><p class="text-xs text-slate-500 font-tajawal">اهتمام كامل بالمريض</p></div>
+        </div>
+      </div>
+      <a href="#booking" class="btn-primary text-white px-6 py-3 rounded-xl font-bold inline-block">احجز استشارتك مع الطبيب <i class="fas fa-arrow-left mr-2 text-sm"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Why Choose Us ===== -->
+<section id="why" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-14 fade-up">
+      <span class="text-sky-600 font-bold text-sm tracking-wider">لماذا تختارنا؟</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">مميزات تجعلنا الخيار الأمثل</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="card-hover bg-gradient-to-b from-sky-50 to-white border border-sky-100 rounded-2xl p-7 text-center fade-up">
+        <div class="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-sky-400 to-sky-600 flex items-center justify-center text-white text-2xl mb-5 shadow-lg shadow-sky-200"><i class="fas fa-user-md"></i></div>
+        <h3 class="font-extrabold text-lg text-slate-800 mb-2">خبرة طبية</h3>
+        <p class="text-slate-500 text-sm font-tajawal leading-relaxed">أطباء متخصصون وذوو كفاءة عالية في مختلف تخصصات الأسنان.</p>
+      </div>
+      <div class="card-hover bg-gradient-to-b from-sky-50 to-white border border-sky-100 rounded-2xl p-7 text-center fade-up">
+        <div class="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-cyan-400 to-cyan-600 flex items-center justify-center text-white text-2xl mb-5 shadow-lg shadow-cyan-200"><i class="fas fa-calendar-check"></i></div>
+        <h3 class="font-extrabold text-lg text-slate-800 mb-2">مواعيد منظمة</h3>
+        <p class="text-slate-500 text-sm font-tajawal leading-relaxed">نظام حجز دقيق يقلل من وقت الانتظار وينظم زياراتك.</p>
+      </div>
+      <div class="card-hover bg-gradient-to-b from-sky-50 to-white border border-sky-100 rounded-2xl p-7 text-center fade-up">
+        <div class="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center text-white text-2xl mb-5 shadow-lg shadow-teal-200"><i class="fas fa-microscope"></i></div>
+        <h3 class="font-extrabold text-lg text-slate-800 mb-2">أجهزة حديثة</h3>
+        <p class="text-slate-500 text-sm font-tajawal leading-relaxed">تقنيات رقمية متطورة للتشخيص والعلاج بأعلى دقة ممكنة.</p>
+      </div>
+      <div class="card-hover bg-gradient-to-b from-sky-50 to-white border border-sky-100 rounded-2xl p-7 text-center fade-up">
+        <div class="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-rose-400 to-rose-600 flex items-center justify-center text-white text-2xl mb-5 shadow-lg shadow-rose-200"><i class="fas fa-heart"></i></div>
+        <h3 class="font-extrabold text-lg text-slate-800 mb-2">راحة المريض</h3>
+        <p class="text-slate-500 text-sm font-tajawal leading-relaxed">بيئة مريحة وودية تهتم بكل تفاصيل تجربتك في العيادة.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Booking System ===== -->
+<section id="booking" class="py-20 bg-gradient-to-br from-sky-900 via-sky-800 to-cyan-900 relative overflow-hidden">
+  <div class="blob bg-sky-500 w-96 h-96 -top-20 -right-20 opacity-30"></div>
+  <div class="blob bg-cyan-400 w-96 h-96 -bottom-20 -left-20 opacity-30"></div>
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
+    <div class="text-center mb-10 fade-up">
+      <span class="text-cyan-300 font-bold text-sm tracking-wider">حجز الموعد</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">احجز موعدك في 4 خطوات بسيطة</h2>
+      <p class="text-sky-200 font-tajawal mt-3">نظام حجز سهل وسريع، اختر الخدمة والتاريخ والوقت المناسبين لك.</p>
+    </div>
+
+    <div class="bg-white rounded-3xl shadow-2xl p-6 sm:p-10 fade-up">
+      <!-- Steps indicator -->
+      <div class="flex items-center justify-between mb-10 max-w-2xl mx-auto" id="stepsIndicator">
+        <div class="step active flex flex-col items-center text-center flex-1" data-step="1">
+          <div class="step-circle w-12 h-12 rounded-full bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-lg border-2 border-sky-200">1</div>
+          <p class="text-xs mt-2 font-bold text-slate-600">الخدمة</p>
+        </div>
+        <div class="flex-1 h-1 bg-sky-100 mx-2 rounded-full" id="line1"></div>
+        <div class="step flex flex-col items-center text-center flex-1" data-step="2">
+          <div class="step-circle w-12 h-12 rounded-full bg-sky-100 text-slate-400 flex items-center justify-center font-bold text-lg border-2 border-slate-200">2</div>
+          <p class="text-xs mt-2 font-bold text-slate-400">التاريخ</p>
+        </div>
+        <div class="flex-1 h-1 bg-sky-100 mx-2 rounded-full" id="line2"></div>
+        <div class="step flex flex-col items-center text-center flex-1" data-step="3">
+          <div class="step-circle w-12 h-12 rounded-full bg-sky-100 text-slate-400 flex items-center justify-center font-bold text-lg border-2 border-slate-200">3</div>
+          <p class="text-xs mt-2 font-bold text-slate-400">الوقت</p>
+        </div>
+        <div class="flex-1 h-1 bg-sky-100 mx-2 rounded-full" id="line3"></div>
+        <div class="step flex flex-col items-center text-center flex-1" data-step="4">
+          <div class="step-circle w-12 h-12 rounded-full bg-sky-100 text-slate-400 flex items-center justify-center font-bold text-lg border-2 border-slate-200">4</div>
+          <p class="text-xs mt-2 font-bold text-slate-400">البيانات</p>
+        </div>
+      </div>
+
+      <!-- Step 1: Service -->
+      <div id="step1" class="booking-step">
+        <h3 class="text-xl font-extrabold text-slate-800 mb-5 text-center">اختر نوع الخدمة</h3>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3" id="serviceSelect"></div>
+      </div>
+
+      <!-- Step 2: Date -->
+      <div id="step2" class="booking-step hidden">
+        <h3 class="text-xl font-extrabold text-slate-800 mb-5 text-center">اختر التاريخ المناسب</h3>
+        <div class="flex items-center justify-between mb-4 max-w-md mx-auto">
+          <button onclick="prevMonth()" class="w-10 h-10 rounded-full bg-sky-100 text-sky-700 hover:bg-sky-200 transition"><i class="fas fa-chevron-right"></i></button>
+          <h4 id="monthLabel" class="font-bold text-slate-700"></h4>
+          <button onclick="nextMonth()" class="w-10 h-10 rounded-full bg-sky-100 text-sky-700 hover:bg-sky-200 transition"><i class="fas fa-chevron-left"></i></button>
+        </div>
+        <div class="grid grid-cols-7 gap-1.5 max-w-md mx-auto text-center mb-2" id="weekdays">
+          <span class="text-xs font-bold text-slate-400">السبت</span>
+          <span class="text-xs font-bold text-slate-400">الأحد</span>
+          <span class="text-xs font-bold text-slate-400">الإثنين</span>
+          <span class="text-xs font-bold text-slate-400">الثلاثاء</span>
+          <span class="text-xs font-bold text-slate-400">الأربعاء</span>
+          <span class="text-xs font-bold text-slate-400">الخميس</span>
+          <span class="text-xs font-bold text-slate-400">الجمعة</span>
+        </div>
+        <div class="grid grid-cols-7 gap-1.5 max-w-md mx-auto" id="calendarGrid"></div>
+        <p class="text-center text-xs text-slate-400 mt-4"><i class="fas fa-info-circle ml-1"></i> أيام العطلة والأوقات غير المتاحة تظهر معطلة تلقائياً.</p>
+      </div>
+
+      <!-- Step 3: Time -->
+      <div id="step3" class="booking-step hidden">
+        <h3 class="text-xl font-extrabold text-slate-800 mb-2 text-center">اختر الوقت المتاح</h3>
+        <p id="selectedDateLabel" class="text-center text-slate-500 font-tajawal mb-5"></p>
+        <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-3 max-w-2xl mx-auto" id="timeSlots"></div>
+        <p id="noSlotsMsg" class="text-center text-rose-500 font-tajawal mt-5 hidden"><i class="fas fa-clock ml-1"></i> لا توجد أوقات متاحة في هذا اليوم، يرجى اختيار تاريخ آخر.</p>
+      </div>
+
+      <!-- Step 4: Patient info -->
+      <div id="step4" class="booking-step hidden">
+        <h3 class="text-xl font-extrabold text-slate-800 mb-5 text-center">أدخل بياناتك</h3>
+        <div class="max-w-lg mx-auto space-y-4">
+          <div class="bg-sky-50 rounded-xl p-4 text-sm text-slate-600 flex items-center gap-2">
+            <i class="fas fa-info-circle text-sky-600"></i>
+            <span>الخدمة: <strong id="summaryService" class="text-sky-800"></strong> | التاريخ: <strong id="summaryDate" class="text-sky-800"></strong> | الوقت: <strong id="summaryTime" class="text-sky-800"></strong></span>
+          </div>
+          <div>
+            <label class="block text-sm font-bold text-slate-700 mb-1.5">الاسم الكامل <span class="text-rose-500">*</span></label>
+            <input type="text" id="patientName" placeholder="مثال: محمد الأمين بن علي" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition">
+          </div>
+          <div>
+            <label class="block text-sm font-bold text-slate-700 mb-1.5">رقم الهاتف <span class="text-rose-500">*</span></label>
+            <input type="tel" id="patientPhone" placeholder="06 12 34 56 78" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition" dir="ltr">
+          </div>
+          <div>
+            <label class="block text-sm font-bold text-slate-700 mb-1.5">ملاحظة (اختياري)</label>
+            <textarea id="patientNote" rows="3" placeholder="أي تفاصيل إضافية تود إخبارنا بها..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none transition resize-none"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation buttons -->
+      <div class="flex items-center justify-between mt-8 max-w-2xl mx-auto">
+        <button id="prevBtn" onclick="prevStep()" class="text-slate-600 font-bold px-5 py-2.5 rounded-xl hover:bg-slate-100 transition disabled:opacity-40" disabled>
+          <i class="fas fa-arrow-right ml-1"></i> السابق
+        </button>
+        <button id="nextBtn" onclick="nextStep()" class="btn-primary text-white font-bold px-7 py-3 rounded-xl">
+          التالي <i class="fas fa-arrow-left mr-1"></i>
+        </button>
+        <button id="confirmBtn" onclick="confirmBooking()" class="hidden btn-primary text-white font-bold px-7 py-3 rounded-xl">
+          <i class="fas fa-check-circle mr-1"></i> تأكيد الحجز
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Reviews ===== -->
+<section id="reviews" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-14 fade-up">
+      <span class="text-sky-600 font-bold text-sm tracking-wider">آراء المرضى</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">ماذا يقول عملاؤنا عنا</h2>
+      <div class="flex items-center justify-center gap-2 mt-4">
+        <div class="text-amber-400 text-xl">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <span class="font-bold text-slate-700">4.9 / 5</span>
+        <span class="text-slate-400 text-sm font-tajawal">من أكثر من 1,200 مراجعة</span>
+      </div>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="reviewsGrid"></div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq" class="py-20 bg-gradient-to-b from-sky-50 to-white">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-14 fade-up">
+      <span class="text-sky-600 font-bold text-sm tracking-wider">الأسئلة الشائعة</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">إجابات على أكثر استفساراتكم</h2>
+    </div>
+    <div class="space-y-3" id="faqList"></div>
+  </div>
+</section>
+
+<!-- ===== Contact / Footer ===== -->
+<section id="contact" class="bg-slate-900 text-white pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-sky-400 to-sky-700 flex items-center justify-center shadow-lg">
+            <i class="fas fa-tooth text-white text-xl"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-extrabold">عيادة الابتسامة</h3>
+            <p class="text-xs text-slate-400 font-tajawal">لطب وجراحة الأسنان</p>
+          </div>
+        </div>
+        <p class="text-slate-400 font-tajawal text-sm leading-relaxed mb-5">عيادة متخصصة في طب الأسنان في الجزائر العاصمة، نقدم رعاية متكاملة بأحدث الأجهزة وأمهر الأطباء.</p>
+        <div class="flex gap-3">
+          <a href="#" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-sky-600 flex items-center justify-center transition"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-sky-600 flex items-center justify-center transition"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-sky-600 flex items-center justify-center transition"><i class="fab fa-tiktok"></i></a>
+          <a href="#" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-sky-600 flex items-center justify-center transition"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="font-extrabold mb-5 text-lg">روابط سريعة</h4>
+        <ul class="space-y-3 text-slate-400 font-tajawal text-sm">
+          <li><a href="#home" class="hover:text-sky-400 transition"><i class="fas fa-chevron-left text-xs ml-2"></i>الرئيسية</a></li>
+          <li><a href="#services" class="hover:text-sky-400 transition"><i class="fas fa-chevron-left text-xs ml-2"></i>الخدمات</a></li>
+          <li><a href="#about" class="hover:text-sky-400 transition"><i class="fas fa-chevron-left text-xs ml-2"></i>عن الطبيب</a></li>
+          <li><a href="#booking" class="hover:text-sky-400 transition"><i class="fas fa-chevron-left text-xs ml-2"></i>احجز موعد</a></li>
+          <li><a href="#faq" class="hover:text-sky-400 transition"><i class="fas fa-chevron-left text-xs ml-2"></i>الأسئلة الشائعة</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-extrabold mb-5 text-lg">معلومات التواصل</h4>
+        <ul class="space-y-3 text-slate-400 font-tajawal text-sm">
+          <li class="flex items-start gap-3"><i class="fas fa-map-marker-alt text-sky-400 mt-1"></i><span>حي السلام، شارع الاستقلال، الجزائر العاصمة، الجزائر</span></li>
+          <li class="flex items-center gap-3"><i class="fas fa-phone-alt text-sky-400"></i><span dir="ltr">0555 12 34 56</span></li>
+          <li class="flex items-center gap-3"><i class="fas fa-envelope text-sky-400"></i><span>contact@dentsmile-dz.com</span></li>
+        </ul>
+        <a href="https://maps.google.com/?q=Alger+Algeria" target="_blank" class="inline-flex items-center gap-2 mt-5 bg-sky-600 hover:bg-sky-700 px-4 py-2.5 rounded-xl text-sm font-bold transition">
+          <i class="fas fa-map-marked-alt"></i> موقعنا على Google Maps
+        </a>
+        <a href="https://wa.me/213555123456" target="_blank" class="inline-flex items-center gap-2 mt-2 ml-2 bg-emerald-600 hover:bg-emerald-700 px-4 py-2.5 rounded-xl text-sm font-bold transition">
+          <i class="fab fa-whatsapp"></i> تواصل عبر WhatsApp
+        </a>
+      </div>
+
+      <div>
+        <h4 class="font-extrabold mb-5 text-lg">ساعات العمل</h4>
+        <ul class="space-y-2.5 text-slate-400 font-tajawal text-sm">
+          <li class="flex justify-between"><span>السبت</span><span dir="ltr">9:00 - 18:00</span></li>
+          <li class="flex justify-between"><span>الأحد</span><span dir="ltr">9:00 - 18:00</span></li>
+          <li class="flex justify-between"><span>الإثنين</span><span dir="ltr">9:00 - 18:00</span></li>
+          <li class="flex justify-between"><span>الثلاثاء</span><span dir="ltr">9:00 - 18:00</span></li>
+          <li class="flex justify-between"><span>الأربعاء</span><span dir="ltr">9:00 - 18:00</span></li>
+          <li class="flex justify-between"><span>الخميس</span><span dir="ltr">9:00 - 18:00</span></li>
+          <li class="flex justify-between text-rose-400"><span>الجمعة</span><span>مغلق</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-slate-800 pt-6 flex flex-wrap justify-between items-center gap-3 text-slate-500 text-sm font-tajawal">
+      <p>© 2025 عيادة الابتسامة لطب الأسنان. جميع الحقوق محفوظة.</p>
+      <p>تصميم وتطوير بكل احترافية في الجزائر <i class="fas fa-heart text-rose-500"></i></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WhatsApp Floating Button ===== -->
+<a href="https://wa.me/213555123456" target="_blank" class="fixed bottom-6 left-6 z-50 w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 shadow-2xl shadow-emerald-300 flex items-center justify-center text-white text-2xl transition animate-pulse-ring">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- ===== Success Modal ===== -->
+<div id="successModal" class="fixed inset-0 z-50 hidden items-center justify-center modal-backdrop p-4">
+  <div class="bg-white rounded-3xl max-w-md w-full p-8 text-center shadow-2xl">
+    <div class="w-20 h-20 mx-auto rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 text-4xl mb-5"><i class="fas fa-check-circle"></i></div>
+    <h3 class="text-2xl font-extrabold text-slate-800 mb-2">تم إرسال طلب الحجز بنجاح!</h3>
+    <p class="text-slate-500 font-tajawal mb-5">سيتم التواصل معك قريباً لتأكيد الموعد على الرقم الذي أدخلته.</p>
+    <div id="successDetails" class="bg-sky-50 rounded-xl p-4 text-sm text-slate-700 mb-5 text-right"></div>
+    <button onclick="closeSuccessModal()" class="btn-primary text-white w-full py-3 rounded-xl font-bold">حسناً، شكراً</button>
+  </div>
+</div>
+
+<!-- ===== Doctor Dashboard Modal ===== -->
+<div id="dashboardModal" class="fixed inset-0 z-50 hidden">
+  <div class="absolute inset-0 modal-backdrop" onclick="closeDashboard()"></div>
+  <div class="absolute inset-0 flex items-start justify-center p-0 sm:p-4 overflow-y-auto">
+    <div class="bg-slate-50 rounded-none sm:rounded-3xl max-w-6xl w-full my-0 sm:my-4 shadow-2xl overflow-hidden">
+      <!-- Dashboard header -->
+      <div class="bg-gradient-to-l from-sky-900 to-cyan-800 text-white p-5 flex items-center justify-between sticky top-0 z-10">
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center"><i class="fas fa-user-md text-xl"></i></div>
+          <div>
+            <h3 class="font-extrabold text-lg">لوحة تحكم الطبيب</h3>
+            <p class="text-xs text-sky-200 font-tajawal">د. كريم بن عمر — إدارة الحجوزات والمواعيد</p>
+          </div>
+        </div>
+        <button onclick="closeDashboard()" class="w-10 h-10 rounded-xl bg-white/10 hover:bg-white/20 transition flex items-center justify-center"><i class="fas fa-times text-xl"></i></button>
+      </div>
+
+      <!-- Stats -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 p-4 bg-white border-b border-slate-200">
+        <div class="bg-sky-50 rounded-xl p-3 border border-sky-100">
+          <p class="text-xs text-slate-500 font-tajawal">إجمالي الحجوزات</p>
+          <p class="text-2xl font-extrabold text-sky-700" id="statTotal">0</p>
+        </div>
+        <div class="bg-amber-50 rounded-xl p-3 border border-amber-100">
+          <p class="text-xs text-slate-500 font-tajawal">بانتظار التأكيد</p>
+          <p class="text-2xl font-extrabold text-amber-600" id="statPending">0</p>
+        </div>
+        <div class="bg-emerald-50 rounded-xl p-3 border border-emerald-100">
+          <p class="text-xs text-slate-500 font-tajawal">مقبولة</p>
+          <p class="text-2xl font-extrabold text-emerald-600" id="statAccepted">0</p>
+        </div>
+        <div class="bg-rose-50 rounded-xl p-3 border border-rose-100">
+          <p class="text-xs text-slate-500 font-tajawal">مرفوضة</p>
+          <p class="text-2xl font-extrabold text-rose-600" id="statRejected">0</p>
+        </div>
+      </div>
+
+      <!-- Tabs -->
+      <div class="flex gap-2 p-4 bg-white border-b border-slate-200 overflow-x-auto scrollbar-hide">
+        <button onclick="switchTab('bookings')" id="tabBookings" class="tab-active px-4 py-2.5 rounded-xl font-bold text-sm whitespace-nowrap transition"><i class="fas fa-calendar-check ml-1"></i> الحجوزات</button>
+        <button onclick="switchTab('availability')" id="tabAvailability" class="px-4 py-2.5 rounded-xl font-bold text-sm whitespace-nowrap bg-slate-100 text-slate-600 hover:bg-slate-200 transition"><i class="fas fa-clock ml-1"></i> الأوقات المتاحة</button>
+        <button onclick="switchTab('holidays')" id="tabHolidays" class="px-4 py-2.5 rounded-xl font-bold text-sm whitespace-nowrap bg-slate-100 text-slate-600 hover:bg-slate-200 transition"><i class="fas fa-calendar-times ml-1"></i> أيام العطلة</button>
+      </div>
+
+      <!-- Tab: Bookings -->
+      <div id="tabBookingsContent" class="p-4 sm:p-6">
+        <div class="flex flex-wrap items-center gap-2 mb-4">
+          <input type="text" id="searchBookings" oninput="renderBookings()" placeholder="بحث بالاسم أو الهاتف..." class="flex-1 min-w-[200px] px-4 py-2.5 rounded-xl border border-slate-200 focus:border-sky-500 outline-none">
+          <select id="filterStatus" onchange="renderBookings()" class="px-4 py-2.5 rounded-xl border border-slate-200 focus:border-sky-500 outline-none bg-white">
+            <option value="all">كل الحالات</option>
+            <option value="pending">بانتظار التأكيد</option>
+            <option value="accepted">مقبولة</option>
+            <option value="rejected">مرفوضة</option>
+          </select>
+        </div>
+        <div id="bookingsList" class="space-y-3"></div>
+      </div>
+
+      <!-- Tab: Availability -->
+      <div id="tabAvailabilityContent" class="hidden p-4 sm:p-6">
+        <div class="bg-white rounded-2xl p-5 border border-slate-200 mb-4">
+          <h4 class="font-extrabold text-slate-800 mb-4"><i class="fas fa-clock text-sky-600 ml-2"></i> إدارة الأوقات اليومية المتاحة</h4>
+          <p class="text-sm text-slate-500 font-tajawal mb-4">فعّل أو عطل المواعيد المتاحة للحجز عبر النقر عليها.</p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2" id="availabilitySlots"></div>
+        </div>
+      </div>
+
+      <!-- Tab: Holidays -->
+      <div id="tabHolidaysContent" class="hidden p-4 sm:p-6">
+        <div class="bg-white rounded-2xl p-5 border border-slate-200 mb-4">
+          <h4 class="font-extrabold text-slate-800 mb-4"><i class="fas fa-calendar-times text-rose-500 ml-2"></i> إضافة أيام العطلة</h4>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <input type="date" id="holidayInput" class="flex-1 min-w-[180px] px-4 py-2.5 rounded-xl border border-slate-200 focus:border-sky-500 outline-none">
+            <input type="text" id="holidayNote" placeholder="سبب العطلة (اختياري)" class="flex-1 min-w-[180px] px-4 py-2.5 rounded-xl border border-slate-200 focus:border-sky-500 outline-none">
+            <button onclick="addHoliday()" class="btn-primary text-white px-5 py-2.5 rounded-xl font-bold"><i class="fas fa-plus mr-1"></i> إضافة</button>
+          </div>
+          <div id="holidaysList" class="space-y-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Toast ===== -->
+<div id="toast" class="fixed bottom-6 right-6 z-[60] hidden"></div>
+
+<script>
+/* ====== Data ====== */
+const services = [
+  {id:'examine',name:'فحص الأسنان',icon:'fa-search',desc:'فحص شامل لحالة الأسنان واللثة',color:'from-sky-400 to-sky-600'},
+  {id:'cleaning',name:'تنظيف الأسنان',icon:'fa-broom',desc:'إزالة الجير والتصبغات وإعادة اللمعان',color:'from-cyan-400 to-cyan-600'},
+  {id:'whitening',name:'تبييض الأسنان',icon:'fa-teeth',desc:'تبييض احترافي بنتائج فورية وآمنة',color:'from-amber-400 to-amber-600'},
+  {id:'caries',name:'علاج التسوس',icon:'fa-tooth',desc:'حشوات تجميلية متطورة وآمنة',color:'from-emerald-400 to-emerald-600'},
+  {id:'gums',name:'علاج اللثة',icon:'fa-heart',desc:'علاج التهابات وأمراض اللثة',color:'from-rose-400 to-rose-600'},
+  {id:'ortho',name:'تقويم الأسنان',icon:'fa-teeth-open',desc:'تقويم معدني وشفافي لكل الأعمار',color:'from-violet-400 to-violet-600'},
+  {id:'implants',name:'تركيبات الأسنان',icon:'fa-crown',desc:'تركيبات وزراعات طبيعية المظهر',color:'from-fuchsia-400 to-fuchsia-600'},
+  {id:'root',name:'علاج الجذور',icon:'fa-syringe',desc:'علاج قنوات الجذور دون ألم',color:'from-teal-400 to-teal-600'},
+  {id:'kids',name:'أسنان الأطفال',icon:'fa-child',desc:'رعاية خاصة لأسنان الأطفال',color:'from-orange-400 to-orange-600'}
+];
+
+const reviews = [
+  {name:'سعاد. م',rate:5,text:'تجربة رائعة جداً، الطاقم محترف والطبيب شرح لي كل شيء بالتفصيل. أنصح بشدة بالعيادة.',avatar:'S'},
+  {name:'ياسين. ب',rate:5,text:'أفضل عيادة أسنان زرتها في الجزائر، الأجهزة حديثة والتعقيم ممتاز. نتيجة التبييض فاقت توقعاتي.',avatar:'Y'},
+  {name:'نسرين. ح',rate:5,text:'كنت خائفة من علاج الجذور لكن الطبيب تعامل بحرفية ولطافة، لم أشعر بأي ألم. شكراً جزيلاً.',avatar:'N'},
+  {name:'كمال. ع',rate:5,text:'موعد منظّم، انتظار قصير جداً، علاج احترافي وأسعار معقولة. تجربة كاملة ممتازة.',avatar:'K'},
+  {name:'أمينة. ف',rate:5,text:'ابنتي كانت خائفة من طبيب الأسنان، هنا تعاملوا معها بلطف كبير والآن تطلب زيارة العيادة بنفسها!',avatar:'A'},
+  {name:'رضوان. ز',rate:5,text:'زراعة سنين بدون أي مشكلة، النتيجة طبيعية تماماً. شكراً للطاقم الرائع على الاحترافية.',avatar:'R'}
+];
+
+const faqs = [
+  {q:'كيف أحجز موعداً في العيادة؟',a:'يمكنك حجز موعدك مباشرة من خلال موقعنا في قسم "احجز موعد"، اختر الخدمة والتاريخ والوقت المناسبين لك وأدخل بياناتك. سنتواصل معك لتأكيد الموعد.'},
+  {q:'ما هي ساعات العمل في العيادة؟',a:'العيادة تعمل من السبت إلى الخميس من الساعة 9:00 صباحاً حتى 18:00 مساءً. يوم الجمعة عطلة أسبوعية.'},
+  {q:'هل يوجد تأمين صحي أو تسهيلات في الدفع؟',a:'نعم، نتعامل مع عدة شركات تأمين صحية ونوفر خطط دفع مرنة للعلاجات الطويلة. تواصل معنا لمعرفة التفاصيل.'},
+  {q:'هل العلاج مؤلم؟',a:'نستخدم أحدث تقنيات التخدير الموضعي لضمان راحة المريض التامة. فريقنا مدرب على التعامل برفق لضمان تجربة خالية من الألم.'},
+  {q:'كم تستغرق جلسة تبييض الأسنان؟',a:'جلسة التبييض الاحترافية تستغرق عادة بين 45 دقيقة إلى ساعة، ويمكن ملاحظة النتائج فوراً بعد الجلسة.'},
+  {q:'هل أحتاج لموعد استشارة قبل العلاج؟',a:'نعم، ننصح بموعد استشارة أولية لفحص حالتك وتحديد خطة العلاج المناسبة قبل البدء بأي إجراء.'}
+];
+
+/* ====== State (localStorage) ====== */
+let DB = {
+  bookings: [],
+  availability: ['09:00','09:30','10:00','10:30','11:00','11:30','14:00','14:30','15:00','15:30','16:00','16:30','17:00','17:30'],
+  holidays: [],
+  disabledSlots: []
+};
+
+function loadDB(){
+  const stored = localStorage.getItem('dentalDB');
+  if(stored){ try{ DB = {...DB, ...JSON.parse(stored)}; }catch(e){} }
+  // seed demo bookings if empty
+  if(DB.bookings.length === 0){
+    const today = new Date();
+    const d1 = new Date(today); d1.setDate(today.getDate()+1);
+    const d2 = new Date(today); d2.setDate(today.getDate()+3);
+    DB.bookings = [
+      {id:genId(),name:'محمد الأمين بن علي',phone:'0661234567',service:'examine',date:fmt(d1),time:'10:00',note:'ألم في الضرس العلوي',status:'pending',createdAt:Date.now()},
+      {id:genId(),name:'فاطمة الزهراء',phone:'0770123456',service:'whitening',date:fmt(d2),time:'15:00',note:'',status:'accepted',createdAt:Date.now()-86400000},
+      {id:genId(),name:'يوسف حدّاد',phone:'0555987612',service:'cleaning',date:fmt(today),time:'09:30',note:'تنظيف دوري',status:'pending',createdAt:Date.now()-3600000}
+    ];
+    saveDB();
+  }
+}
+function saveDB(){ localStorage.setItem('dentalDB', JSON.stringify(DB)); }
+function genId(){ return 'bk'+Date.now()+Math.floor(Math.random()*1000); }
+function fmt(d){ return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); }
+
+/* ====== Render Services ====== */
+function renderServices(){
+  const grid = document.getElementById('servicesGrid');
+  grid.innerHTML = services.map(s=>`
+    <div class="service-card card-hover bg-white border border-slate-100 rounded-2xl p-6 shadow-sm fade-up cursor-pointer" onclick="selectServiceFromCard('${s.id}')">
+      <div class="w-16 h-16 rounded-2xl bg-gradient-to-br ${s.color} flex items-center justify-center text-white text-2xl mb-4 shadow-lg">
+        <i class="fas ${s.icon} service-icon"></i>
+      </div>
+      <h3 class="font-extrabold text-lg text-slate-800 mb-2">${s.name}</h3>
+      <p class="text-slate-500 text-sm font-tajawal leading-relaxed mb-3">${s.desc}</p>
+      <span class="text-sky-600 font-bold text-sm flex items-center gap-1">احجز الآن <i class="fas fa-arrow-left text-xs"></i></span>
+    </div>
+  `).join('');
+}
+
+function selectServiceFromCard(id){
+  selectedService = id;
+  goStep(1);
+  document.getElementById('booking').scrollIntoView({behavior:'smooth'});
+}
+
+/* ====== Render Reviews ====== */
+function renderReviews(){
+  document.getElementById('reviewsGrid').innerHTML = reviews.map((r,i)=>`
+    <div class="card-hover bg-white border border-slate-100 rounded-2xl p-6 shadow-sm fade-up">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-sky-400 to-sky-600 flex items-center justify-center text-white font-bold text-lg">${r.avatar}</div>
+        <div>
+          <p class="font-bold text-slate-800">${r.name}</p>
+          <div class="text-amber-400 text-sm">${'<i class="fas fa-star"></i>'.repeat(r.rate)}</div>
+        </div>
+        <i class="fas fa-quote-right text-sky-100 text-3xl mr-auto"></i>
+      </div>
+      <p class="text-slate-600 font-tajawal leading-relaxed text-sm">${r.text}</p>
+    </div>
+  `).join('');
+}
+
+/* ====== Render FAQ ====== */
+function renderFAQ(){
+  document.getElementById('faqList').innerHTML = faqs.map((f,i)=>`
+    <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm fade-up">
+      <button onclick="toggleFaq(${i})" class="w-full flex items-center justify-between p-5 text-right font-bold text-slate-800 hover:bg-sky-50/50 transition">
+        <span class="flex items-center gap-3"><i class="fas fa-question-circle text-sky-500"></i> ${f.q}</span>
+        <i id="faqIcon${i}" class="fas fa-chevron-down text-sky-500 transition-transform"></i>
+      </button>
+      <div id="faqAns${i}" class="hidden px-5 pb-5 text-slate-600 font-tajawal leading-relaxed border-t border-slate-100 pt-4">${f.a}</div>
+    </div>
+  `).join('');
+}
+function toggleFaq(i){
+  const ans=document.getElementById('faqAns'+i);
+  const icon=document.getElementById('faqIcon'+i);
+  ans.classList.toggle('hidden');
+  icon.classList.toggle('rotate-180');
+}
+
+/* ====== Booking Flow ====== */
+let currentStep = 1;
+let selectedService = null;
+let selectedDate = null;
+let selectedTime = null;
+let calMonth = new Date();
+calMonth.setDate(1);
+
+function renderServiceSelect(){
+  const cont = document.getElementById('serviceSelect');
+  cont.innerHTML = services.map(s=>`
+    <button onclick="pickService('${s.id}')" data-svc="${s.id}" class="service-opt text-right p-4 rounded-xl border-2 border-slate-200 hover:border-sky-500 hover:bg-sky-50 transition flex items-center gap-3">
+      <div class="w-11 h-11 rounded-xl bg-gradient-to-br ${s.color} flex items-center justify-center text-white text-lg flex-shrink-0"><i class="fas ${s.icon}"></i></div>
+      <span class="font-bold text-slate-700 text-sm">${s.name}</span>
+    </button>
+  `).join('');
+  // pre-highlight if selectedService set
+  if(selectedService){
+    document.querySelector(`.service-opt[data-svc="${selectedService}"]`)?.classList.add('!border-sky-500','!bg-sky-50');
+  }
+}
+function pickService(id){
+  selectedService = id;
+  document.querySelectorAll('.service-opt').forEach(b=>{
+    b.classList.remove('!border-sky-500','!bg-sky-50');
+    if(b.dataset.svc===id) b.classList.add('!border-sky-500','!bg-sky-50');
+  });
+  updateNextBtn();
+}
+
+function renderCalendar(){
+  const grid = document.getElementById('calendarGrid');
+  const year = calMonth.getFullYear();
+  const month = calMonth.getMonth();
+  const monthNames = ['يناير','فبراير','مارس','أبريل','مايو','يونيو','يوليو','أغسطس','سبتمبر','أكتوبر','نوفمبر','ديسمبر'];
+  document.getElementById('monthLabel').textContent = monthNames[month]+' '+year;
+
+  const first = new Date(year, month, 1);
+  const last = new Date(year, month+1, 0);
+  let startDay = first.getDay(); // 0 = Sunday
+  // convert to Saturday-first order
+  // Saturday=0, Sunday=1, Monday=2, Tuesday=3, Wednesday=4, Thursday=5, Friday=6
+  // JS getDay: Sunday=0, Monday=1, ... Saturday=6
+  const offsetMap = {0:1,1:2,2:3,3:4,4:5,5:6,6:0};
+  const offset = offsetMap[startDay];
+  let html = '';
+  for(let i=0;i<offset;i++) html += '<div></div>';
+  const today = new Date(); today.setHours(0,0,0,0);
+  for(let d=1; d<=last.getDate(); d++){
+    const dateObj = new Date(year, month, d);
+    const dateStr = fmt(dateObj);
+    const isPast = dateObj < today;
+    const dayOfWeek = dateObj.getDay(); // 5 = Friday
+    const isFriday = dayOfWeek === 5;
+    const isHoliday = DB.holidays.some(h=>h.date===dateStr);
+    const disabled = isPast || isFriday || isHoliday;
+    const isSelected = selectedDate === dateStr;
+    html += `
+      <button ${disabled?'disabled':''} onclick="pickDate('${dateStr}')" 
+        class="aspect-square rounded-xl text-sm font-bold transition flex flex-col items-center justify-center
+        ${disabled ? 'bg-slate-50 text-slate-300 cursor-not-allowed line-through' : 'border-2 border-slate-200 hover:border-sky-500 hover:bg-sky-50 text-slate-700'}
+        ${isSelected ? '!border-sky-500 !bg-gradient-to-br !from-sky-500 !to-sky-600 !text-white !shadow-lg' : ''}">
+        <span>${d}</span>
+        ${isHoliday ? '<span class="text-[10px] mt-0.5">عطلة</span>' : ''}
+      </button>
+    `;
+  }
+  grid.innerHTML = html;
+}
+function prevMonth(){ calMonth.setMonth(calMonth.getMonth()-1); renderCalendar(); }
+function nextMonth(){ calMonth.setMonth(calMonth.getMonth()+1); renderCalendar(); }
+
+function pickDate(dateStr){
+  selectedDate = dateStr;
+  selectedTime = null;
+  renderCalendar();
+  // go to step 3 after slight delay
+  setTimeout(()=>goStep(3),250);
+  renderTimeSlots();
+}
+
+function renderTimeSlots(){
+  const cont = document.getElementById('timeSlots');
+  const noMsg = document.getElementById('noSlotsMsg');
+  if(!selectedDate){ cont.innerHTML=''; return; }
+
+  // Build date label
+  const d = new Date(selectedDate);
+  const days = ['الأحد','الإثنين','الثلاثاء','الأربعاء','الخميس','الجمعة','السبت'];
+  document.getElementById('selectedDateLabel').textContent = days[d.getDay()]+' '+d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear();
+
+  // Already booked times
+  const bookedTimes = DB.bookings.filter(b=>b.date===selectedDate && b.status!=='rejected').map(b=>b.time);
+  // Disabled slots for this date
+  const disabledForDate = DB.disabledSlots.filter(s=>s.date===selectedDate).map(s=>s.time);
+
+  const available = DB.availability.filter(t=> !bookedTimes.includes(t) && !disabledForDate.includes(t));
+  if(available.length===0){
+    cont.innerHTML='';
+    noMsg.classList.remove('hidden');
+    updateNextBtn();
+    return;
+  }
+  noMsg.classList.add('hidden');
+  cont.innerHTML = available.map(t=>`
+    <button onclick="pickTime('${t}')" data-time="${t}" class="time-slot py-2.5 px-2 rounded-xl border-2 border-slate-200 font-bold text-slate-700 text-sm ${selectedTime===t?'selected':''}">
+      <i class="far fa-clock ml-1"></i> ${t}
+    </button>
+  `).join('');
+  updateNextBtn();
+}
+function pickTime(t){
+  selectedTime = t;
+  renderTimeSlots();
+  updateNextBtn();
+}
+
+function goStep(n){
+  currentStep = n;
+  document.querySelectorAll('.booking-step').forEach(s=>s.classList.add('hidden'));
+  document.getElementById('step'+n).classList.remove('hidden');
+  // update indicator
+  document.querySelectorAll('#stepsIndicator .step').forEach(s=>{
+    const sn = parseInt(s.dataset.step);
+    s.classList.remove('active','done');
+    if(sn < n) s.classList.add('done');
+    else if(sn === n) s.classList.add('active');
+  });
+  // update lines
+  ['line1','line2','line3'].forEach((id,i)=>{ document.getElementById(id).classList.toggle('bg-sky-500', i < n-1); });
+  // buttons
+  document.getElementById('prevBtn').disabled = n===1;
+  if(n===4){
+    document.getElementById('nextBtn').classList.add('hidden');
+    document.getElementById('confirmBtn').classList.remove('hidden');
+    // fill summary
+    const svc = services.find(s=>s.id===selectedService);
+    document.getElementById('summaryService').textContent = svc?svc.name:'';
+    const d = new Date(selectedDate);
+    document.getElementById('summaryDate').textContent = d.toLocaleDateString('ar-DZ');
+    document.getElementById('summaryTime').textContent = selectedTime;
+  } else {
+    document.getElementById('nextBtn').classList.remove('hidden');
+    document.getElementById('confirmBtn').classList.add('hidden');
+  }
+  updateNextBtn();
+}
+function nextStep(){
+  if(currentStep===1 && !selectedService){ showToast('الرجاء اختيار الخدمة','warn'); return; }
+  if(currentStep===2 && !selectedDate){ showToast('الرجاء اختيار التاريخ','warn'); return; }
+  if(currentStep===3 && !selectedTime){ showToast('الرجاء اختيار الوقت','warn'); return; }
+  goStep(currentStep+1);
+}
+function prevStep(){ if(currentStep>1) goStep(currentStep-1); }
+function updateNextBtn(){
+  const btn = document.getElementById('nextBtn');
+  if(currentStep===1) btn.disabled = !selectedService;
+  else if(currentStep===2) btn.disabled = !selectedDate;
+  else if(currentStep===3) btn.disabled = !selectedTime;
+  else btn.disabled = false;
+}
+
+function confirmBooking(){
+  const name = document.getElementById('patientName').value.trim();
+  const phone = document.getElementById('patientPhone').value.trim();
+  if(!name || name.length<3){ showToast('الرجاء إدخال الاسم الكامل','warn'); return; }
+  if(!/^[0-9+\s]{8,}$/.test(phone)){ showToast('الرجاء إدخال رقم هاتف صحيح','warn'); return; }
+  const note = document.getElementById('patientNote').value.trim();
+  const booking = {
+    id: genId(),
+    name, phone, note,
+    service: selectedService,
+    date: selectedDate,
+    time: selectedTime,
+    status: 'pending',
+    createdAt: Date.now()
+  };
+  DB.bookings.push(booking);
+  saveDB();
+  // show success
+  const svc = services.find(s=>s.id===selectedService);
+  document.getElementById('successDetails').innerHTML = `
+    <p><i class="fas fa-tooth text-sky-600 ml-2"></i> <strong>الخدمة:</strong> ${svc.name}</p>
+    <p><i class="fas fa-calendar text-sky-600 ml-2"></i> <strong>التاريخ:</strong> ${new Date(selectedDate).toLocaleDateString('ar-DZ')}</p>
+    <p><i class="fas fa-clock text-sky-600 ml-2"></i> <strong>الوقت:</strong> ${selectedTime}</p>
+    <p><i class="fas fa-user text-sky-600 ml-2"></i> <strong>الاسم:</strong> ${name}</p>
+  `;
+  document.getElementById('successModal').classList.remove('hidden');
+  document.getElementById('successModal').classList.add('flex');
+  // reset
+  resetBooking();
+}
+function resetBooking(){
+  selectedService=null; selectedDate=null; selectedTime=null;
+  document.getElementById('patientName').value='';
+  document.getElementById('patientPhone').value='';
+  document.getElementById('patientNote').value='';
+  renderServiceSelect();
+  renderCalendar();
+  goStep(1);
+}
+function closeSuccessModal(){
+  document.getElementById('successModal').classList.add('hidden');
+  document.getElementById('successModal').classList.remove('flex');
+}
+
+/* ====== Toast ====== */
+function showToast(msg, type='success'){
+  const colors = {success:'bg-emerald-500', warn:'bg-amber-500', error:'bg-rose-500'};
+  const icons = {success:'fa-check-circle', warn:'fa-exclamation-triangle', error:'fa-times-circle'};
+  const t = document.getElementById('toast');
+  t.innerHTML = `<div class="toast ${colors[type]} text-white px-5 py-3 rounded-xl shadow-2xl flex items-center gap-2 font-bold text-sm"><i class="fas ${icons[type]}"></i> ${msg}</div>`;
+  t.classList.remove('hidden');
+  setTimeout(()=>{ t.classList.add('hidden'); }, 3000);
+}
+
+/* ====== Dashboard ====== */
+function openDashboard(){
+  document.getElementById('dashboardModal').classList.remove('hidden');
+  renderBookings();
+  renderAvailability();
+  renderHolidays();
+  updateStats();
+}
+function closeDashboard(){ document.getElementById('dashboardModal').classList.add('hidden'); }
+function switchTab(tab){
+  ['bookings','availability','holidays'].forEach(t=>{
+    document.getElementById('tab'+t.charAt(0).toUpperCase()+t.slice(1)+'Content').classList.toggle('hidden', t!==tab);
+    const btn = document.getElementById('tab'+t.charAt(0).toUpperCase()+t.slice(1));
+    btn.classList.toggle('tab-active', t===tab);
+    btn.classList.toggle('bg-slate-100', t!==tab);
+    btn.classList.toggle('text-slate-600', t!==tab);
+  });
+}
+
+function renderBookings(){
+  const search = document.getElementById('searchBookings').value.trim().toLowerCase();
+  const filter = document.getElementById('filterStatus').value;
+  let list = [...DB.bookings].sort((a,b)=>b.createdAt-a.createdAt);
+  if(search) list = list.filter(b=>b.name.toLowerCase().includes(search) || b.phone.includes(search));
+  if(filter!=='all') list = list.filter(b=>b.status===filter);
+  const cont = document.getElementById('bookingsList');
+  if(list.length===0){
+    cont.innerHTML = '<div class="text-center py-10 text-slate-400 font-tajawal"><i class="fas fa-inbox text-4xl mb-3"></i><p>لا توجد حجوزات مطابقة.</p></div>';
+    return;
+  }
+  cont.innerHTML = list.map(b=>{
+    const svc = services.find(s=>s.id===b.service);
+    const statusMap = {
+      pending:{cls:'badge-pending',txt:'بانتظار التأكيد',icon:'fa-hourglass-half'},
+      accepted:{cls:'badge-accepted',txt:'مقبول',icon:'fa-check-circle'},
+      rejected:{cls:'badge-rejected',txt:'مرفوض',icon:'fa-times-circle'}
+    };
+    const st = statusMap[b.status];
+    return `
+      <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm">
+        <div class="flex flex-wrap items-start justify-between gap-3">
+          <div class="flex-1 min-w-[200px]">
+            <div class="flex items-center gap-2 mb-2">
+              <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-sky-400 to-sky-600 flex items-center justify-center text-white font-bold">${b.name.charAt(0)}</div>
+              <div>
+                <p class="font-extrabold text-slate-800">${b.name}</p>
+                <p class="text-xs text-slate-500" dir="ltr">${b.phone}</p>
+              </div>
+              <span class="px-2.5 py-1 rounded-full text-xs font-bold ${st.cls}"><i class="fas ${st.icon} ml-1"></i> ${st.txt}</span>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-sm text-slate-600 font-tajawal mt-2">
+              <span><i class="fas fa-tooth text-sky-500 ml-1"></i> ${svc?svc.name:b.service}</span>
+              <span><i class="fas fa-calendar text-sky-500 ml-1"></i> ${new Date(b.date).toLocaleDateString('ar-DZ')}</span>
+              <span><i class="fas fa-clock text-sky-500 ml-1"></i> ${b.time}</span>
+            </div>
+            ${b.note?`<p class="text-xs text-slate-500 mt-2 bg-slate-50 rounded-lg p-2"><i class="fas fa-sticky-note text-amber-500 ml-1"></i> ${b.note}</p>`:''}
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            ${b.status==='pending'?`
+              <button onclick="updateBookingStatus('${b.id}','accepted')" class="bg-emerald-500 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg text-xs font-bold transition"><i class="fas fa-check ml-1"></i> قبول</button>
+              <button onclick="updateBookingStatus('${b.id}','rejected')" class="bg-rose-500 hover:bg-rose-600 text-white px-3 py-1.5 rounded-lg text-xs font-bold transition"><i class="fas fa-times ml-1"></i> رفض</button>
+            `:''}
+            <button onclick="editBooking('${b.id}')" class="bg-sky-100 hover:bg-sky-200 text-sky-700 px-3 py-1.5 rounded-lg text-xs font-bold transition"><i class="fas fa-edit ml-1"></i> تعديل</button>
+            <button onclick="deleteBooking('${b.id}')" class="bg-slate-100 hover:bg-rose-100 text-slate-600 hover:text-rose-600 px-3 py-1.5 rounded-lg text-xs font-bold transition"><i class="fas fa-trash ml-1"></i> حذف</button>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+  updateStats();
+}
+
+function updateBookingStatus(id, status){
+  const b = DB.bookings.find(x=>x.id===id);
+  if(b){ b.status = status; saveDB(); renderBookings(); showToast('تم تحديث حالة الحجز','success'); }
+}
+function deleteBooking(id){
+  if(!confirm('هل أنت متأكد من حذف هذا الحجز؟')) return;
+  DB.bookings = DB.bookings.filter(x=>x.id!==id);
+  saveDB(); renderBookings(); showToast('تم حذف الحجز','success');
+}
+function editBooking(id){
+  const b = DB.bookings.find(x=>x.id===id);
+  if(!b) return;
+  const name = prompt('اسم المريض:', b.name);
+  if(name===null) return;
+  const phone = prompt('رقم الهاتف:', b.phone);
+  if(phone===null) return;
+  const time = prompt('الوقت (مثال: 10:00):', b.time);
+  if(time===null) return;
+  b.name = name.trim()||b.name;
+  b.phone = phone.trim()||b.phone;
+  b.time = time.trim()||b.time;
+  saveDB(); renderBookings(); showToast('تم تعديل الحجز','success');
+}
+
+function renderAvailability(){
+  const cont = document.getElementById('availabilitySlots');
+  cont.innerHTML = DB.availability.map(t=>{
+    const isOn = !DB.disabledSlots.some(s=>s.date==='__all__' && s.time===t);
+    return `<button onclick="toggleGlobalSlot('${t}')" class="py-2.5 px-3 rounded-xl border-2 font-bold text-sm transition ${isOn?'border-emerald-300 bg-emerald-50 text-emerald-700':'border-slate-200 bg-slate-100 text-slate-400 line-through'}">
+      <i class="far fa-clock ml-1"></i> ${t}
+    </button>`;
+  }).join('');
+}
+function toggleGlobalSlot(t){
+  const idx = DB.disabledSlots.findIndex(s=>s.date==='__all__' && s.time===t);
+  if(idx>-1) DB.disabledSlots.splice(idx,1);
+  else DB.disabledSlots.push({date:'__all__',time:t});
+  saveDB(); renderAvailability();
+  showToast('تم تحديث الأوقات','success');
+}
+
+function renderHolidays(){
+  const cont = document.getElementById('holidaysList');
+  if(DB.holidays.length===0){
+    cont.innerHTML = '<p class="text-sm text-slate-400 font-tajawal text-center py-4">لا توجد أيام عطلة مضافة.</p>';
+    return;
+  }
+  cont.innerHTML = [...DB.holidays].sort((a,b)=>new Date(a.date)-new Date(b.date)).map(h=>`
+    <div class="flex items-center justify-between bg-rose-50 border border-rose-100 rounded-xl p-3">
+      <div>
+        <p class="font-bold text-slate-800 text-sm"><i class="fas fa-calendar-times text-rose-500 ml-2"></i> ${new Date(h.date).toLocaleDateString('ar-DZ')}</p>
+        ${h.note?`<p class="text-xs text-slate-500 mt-1 font-tajawal">${h.note}</p>`:''}
+      </div>
+      <button onclick="removeHoliday('${h.date}')" class="text-rose-500 hover:bg-rose-100 w-8 h-8 rounded-lg transition"><i class="fas fa-trash text-sm"></i></button>
+    </div>
+  `).join('');
+}
+function addHoliday(){
+  const date = document.getElementById('holidayInput').value;
+  const note = document.getElementById('holidayNote').value.trim();
+  if(!date){ showToast('الرجاء اختيار تاريخ','warn'); return; }
+  if(DB.holidays.some(h=>h.date===date)){ showToast('هذا اليوم مضاف مسبقاً','warn'); return; }
+  DB.holidays.push({date, note});
+  saveDB(); renderHolidays();
+  document.getElementById('holidayInput').value='';
+  document.getElementById('holidayNote').value='';
+  showToast('تمت إضافة يوم العطلة','success');
+}
+function removeHoliday(date){
+  DB.holidays = DB.holidays.filter(h=>h.date!==date);
+  saveDB(); renderHolidays(); showToast('تم حذف يوم العطلة','success');
+}
+
+function updateStats(){
+  document.getElementById('statTotal').textContent = DB.bookings.length;
+  document.getElementById('statPending').textContent = DB.bookings.filter(b=>b.status==='pending').length;
+  document.getElementById('statAccepted').textContent = DB.bookings.filter(b=>b.status==='accepted').length;
+  document.getElementById('statRejected').textContent = DB.bookings.filter(b=>b.status==='rejected').length;
+}
+
+/* ====== Menu & Misc ====== */
+function toggleMenu(){ document.getElementById('mobileMenu').classList.toggle('hidden'); }
+
+/* Intersection Observer for fade-up */
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('visible'); });
+},{threshold:0.1});
+
+/* ====== Init ====== */
+window.addEventListener('DOMContentLoaded', ()=>{
+  loadDB();
+  renderServices();
+  renderReviews();
+  renderFAQ();
+  renderServiceSelect();
+  renderCalendar();
+  goStep(1);
+  document.querySelectorAll('.fade-up').forEach(el=>io.observe(el));
+});
+
+// expose for inline handlers
+window.toggleMenu = toggleMenu;
+window.openDashboard = openDashboard;
+window.closeDashboard = closeDashboard;
+window.switchTab = switchTab;
+window.prevMonth = prevMonth;
+window.nextMonth = nextMonth;
+window.pickService = pickService;
+window.pickDate = pickDate;
+window.pickTime = pickTime;
+window.nextStep = nextStep;
+window.prevStep = prevStep;
+window.confirmBooking = confirmBooking;
+window.closeSuccessModal = closeSuccessModal;
+window.updateBookingStatus = updateBookingStatus;
+window.deleteBooking = deleteBooking;
+window.editBooking = editBooking;
+window.toggleGlobalSlot = toggleGlobalSlot;
+window.addHoliday = addHoliday;
+window.removeHoliday = removeHoliday;
+window.renderBookings = renderBookings;
+window.toggleFaq = toggleFaq;
+window.selectServiceFromCard = selectServiceFromCard;
+</script>
+</body>
+</html>
